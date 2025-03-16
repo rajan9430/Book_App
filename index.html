@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- font awsome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- tail wind -->
+    <link rel="stylesheet" href="output.css" />
+    <!-- apnicss -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-[#f6f6f6] p-1">
+    <!-- header -->
+    <header
+      class="bg-white h-16 p-6 border-2 border-indigo-600 rounded-b-lg flex justify-between items-center"
+    >
+      <!-- left -->
+      <div class="left">
+        <i class="fa-solid fa-book"></i>
+        BOOK
+      </div>
+      <!-- right -->
+      <div class="right flex gap-4">
+        <button>mode</button>
+        <button
+          class="bg-blue-500 px-4 py-2 rounded-xl text-white hover:bg-yellow-400 hover:text-black"
+          id="sign-up-button"
+        >
+          Sign Up
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- main  -->
+    <main class="py-12 px-6 flex gap-2">
+      <div class="left w-[28%] flex flex-col gap-8">
+        <!-- categorries -->
+        <div
+          class="category-container border-1 text-[14px] w-full h-[350px] font-semibold flex flex-col gap-5 overflow-x-hidden overflow-scroll"
+        >
+          <p class="text-indigo-500" id="all-categories">All Categories</p>
+        </div>
+        <!-- ukraine -->
+        <div
+          class="ukraine w-full h-[450px] pt-4 pb-8 px-6 rounded-lg text-white flex flex-col gap-4"
+        >
+          <h1 class="text-2xl font-bold">
+            Support India
+            <i class="fa-solid fa-people-arrows"></i>
+          </h1>
+          <ul class="list-none h-[430px] overflow-auto flex flex-col gap-5">
+            <li>01 <img src="./assets/01-found-2.60510847.png" alt="" /></li>
+            <li>02 <img src="./assets/02-found-2.ca1470b9.png" alt="" /></li>
+            <li>03 <img src="./assets/03-found-2.120110b5.png" alt="" /></li>
+            <li>04 <img src="./assets/04-found-2.eb46b36a.png" alt="" /></li>
+            <li>05 <img src="./assets/05-found-2.0f9c49b7.png" alt="" /></li>
+            <li>06 <img src="./assets/06-found-2.f28ed76b.png" alt="" /></li>
+            <li>07 <img src="./assets/07-found-2.ee2ee4c4.png" alt="" /></li>
+            <li>08 <img src="./assets/08-found-2.16ff1d18.png" alt="" /></li>
+            <li>09 <img src="./assets/09-found-2.7545e455.png" alt="" /></li>
+          </ul>
+          <i class="fa-solid fa-angle-down text-xl m-auto text-black"></i>
+        </div>
+      </div>
+      <!-- books container -->
+      <div
+        class="books-container w-[72%] px-4 py-8 border-1 border-red-500 flex flex-col gap-6"
+      ></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+<!-- npx @tailwindcss/cli -i ./input.css -o ./output.css --watch -->

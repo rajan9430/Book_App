@@ -1,0 +1,39 @@
+/* CATEGORY SEGMENT */
+.category-container > p:hover {
+  transform: scale(1.3);
+  transform: translateX(1%);
+  color: #6e7cfa;
+  cursor: pointer;
+}
+
+/* UKRAINE */
+.ukraine{
+  background: linear-gradient(to bottom left, #502fe8, #c2b6f7);
+}
+.ukraine ul::-webkit-scrollbar {
+  display: none;
+}
+.ukraine > ul > li > img{
+  display: inline-block;
+  width: 100px;
+  height: 2rem;
+}
+
+/* BOOKS SEGMENT */
+.parent-div{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.inner-books-div{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.inner-books-div > div{
+  width: 20%;
+
+}
+.show-more{
+  align-self: flex-end;
+}
